@@ -5,6 +5,9 @@ describe('Age', function () {
     let age = new galacticAge();
     expect(age.yearsToSeconds(1)).toEqual(31536000);
   });
+
+  it('should determine the difference between two dates in seconds')
+    expect(age.dateDifference()).toEqual();
 });
 
 
