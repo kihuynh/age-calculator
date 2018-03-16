@@ -18,7 +18,7 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new UglifyJsPlugin({ sourceMap: true }),
     new HtmlWebpackPlugin({
-      title: 'Haiku',
+      title: 'Galactic Age',
       template: './src/index.html',
       inject: 'body'
     })

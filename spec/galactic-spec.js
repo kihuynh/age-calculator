@@ -1,10 +1,10 @@
-import { Galactic } from './../src/galactic.js';
+// import { Galactic } from './../src/galactic.js';
 
 
 describe('Galactic', function () {
   it('should convert a persons age into seconds', function () {
     let age = new galacticAge(1);
-    
+
     expect(age.yearsToSeconds).toEqual(31536000);
   });
 });
