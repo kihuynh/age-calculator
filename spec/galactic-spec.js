@@ -1,9 +1,8 @@
 import { galacticAge } from './../src/galactic.js';
 
-
 describe('Age', function () {
   it('should convert a persons age into seconds', function () {
-    let age = new galacticAge(1);
+    let age = new galacticAge();
     expect(age.yearsToSeconds(1)).toEqual(31536000);
   });
 });
