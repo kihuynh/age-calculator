@@ -1,7 +1,7 @@
-// import { Galactic } from './../src/galactic.js';
+// import { galacticAge } from './../src/galactic.js';
 
 
-describe('Galactic', function () {
+describe('Age', function () {
   it('should convert a persons age into seconds', function () {
     let age = new galacticAge(1);
 
