@@ -7,6 +7,7 @@ describe('Age', function () {
   });
 
   it('should determine the difference between two dates in seconds')
+  // take two dates get diff (d2-d1) = results / whatever math
     expect(age.dateDifference()).toEqual();
 });
 
