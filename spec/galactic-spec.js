@@ -16,16 +16,9 @@ describe('Age', function () {
     let age = new galacticAge(26, "1991-08-04");
     expect(age.mercuryAge()).toEqual(108);
   });
+
+  it('should return user age into Venus age', function() {
+    let age = new galacticAge(26, "1991-08-04");
+    expect(age.venusAge()).toEqual(41);
+  });
 });
-
-
-
-// describe('Haiku', function() {
-//   it('takes in haiku line and returns the number of syllables', function() {
-//     let newHaiku = new Haiku("haiku");
-//     let syllableCount = 2;
-//     let haikuLine = "haiku"
-//     expect(newHaiku.countWordSyllables(haikuLine)).toEqual(syllableCount);
-//   })
-//
-// }
