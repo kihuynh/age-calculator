@@ -4,8 +4,12 @@ export class galacticAge {
     this.age = age;
   }
 
-  yearsToSeconds(age) {
-    let ageSeconds = age * 31536000;
+  yearsToSeconds() {
+    let ageSeconds = this.age * 31536000;
     return ageSeconds;
   }
+
+  // dateDifference() {
+  //
+  // }
 }
