@@ -21,4 +21,9 @@ export class galacticAge {
     let merc = Math.floor((this.age / 0.24));
     return merc;
   }
+
+  venusAge() {
+    let venus = Math.floor((this.age / 0.62));
+    return venus;
+  }
 }
