@@ -1,7 +1,9 @@
 export class galacticAge {
 
-  constructor(age){
+  constructor(age, birthDate){
     this.age = age;
+    this.userBirth = birthDate;
+    this.currentDate = Date.now();
   }
 
   yearsToSeconds() {
@@ -9,7 +11,9 @@ export class galacticAge {
     return ageSeconds;
   }
 
-  // dateDifference() {
-  //
-  // }
+  dateDifference() {
+    let birth = new Date("1991-08-04").getTime();
+    let userAge = Math.floor((this.currentDate - birth)/1000);
+    return userAge;
+  }
 }
