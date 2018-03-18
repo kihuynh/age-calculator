@@ -14,11 +14,16 @@ describe('Age', function () {
 
   it('should return user age into Mercury age', function() {
     let age = new galacticAge(26, "1991-08-04");
-    expect(age.mercuryAge()).toEqual(108);
+    expect(age.mercuryAge()).toBeGreaterThanOrEqual(108);
   });
 
   it('should return user age into Venus age', function() {
     let age = new galacticAge(26, "1991-08-04");
-    expect(age.venusAge()).toEqual(41);
+    expect(age.venusAge()).toBeGreaterThanOrEqual(41);
+  });
+
+  it('should return user age into Mars age', function () {
+    let age = new galacticAge(26, "1991-08-04");
+    expect(age.marsAge()).toBeGreaterThanOrEqual(13);
   });
 });
