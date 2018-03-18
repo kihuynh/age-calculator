@@ -9,7 +9,12 @@ describe('Age', function () {
   it('should determine the difference between two dates in seconds', function() {
   // take two dates get diff (d2-d1) = results / 1000;
     let age = new galacticAge(26, "1991-08-04");
-    expect(age.dateDifference()).toBeGreaterThan(840096418); // differnt matcher for flexibility round up or down. 
+    expect(age.dateDifference()).toBeGreaterThan(840096418); // differnt matcher for flexibility round up or down.
+  });
+
+  it('should return user age into Mercury age', function() {
+    let age = new galacticAge(26, "1991-08-04");
+    expect(age.mercuryAge()).toBeGreaterThan(108);
   });
 });
 
