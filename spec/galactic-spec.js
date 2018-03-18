@@ -14,7 +14,7 @@ describe('Age', function () {
 
   it('should return user age into Mercury age', function() {
     let age = new galacticAge(26, "1991-08-04");
-    expect(age.mercuryAge()).toBeGreaterThan(108);
+    expect(age.mercuryAge()).toEqual(108);
   });
 });
 

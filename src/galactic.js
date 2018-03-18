@@ -16,4 +16,9 @@ export class galacticAge {
     let userAge = Math.floor((this.currentDate - birth)/1000);
     return userAge;
   }
+
+  mercuryAge() {
+    let merc = Math.floor((this.age / 0.24));
+    return merc;
+  }
 }
