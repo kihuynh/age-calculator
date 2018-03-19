@@ -31,4 +31,10 @@ describe('Age', function () {
     let age = new galacticAge(26, "1991-08-04");
     expect(age.jupiterAge()).toBeGreaterThanOrEqual(2);
   });
+
+  it('returns remaining time on Earth', function() {
+    let age = new galacticAge(26, "1991-08-04");
+    expect(age.remainingEarth()).toEqual(46);
+  });
+
 });
