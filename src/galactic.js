@@ -36,4 +36,10 @@ export class galacticAge {
     let jupiter = Math.floor((this.age / 11.86));
     return jupiter;
   }
+
+  remainingEarth() {
+    const leftExpect = 72;
+    let lifeEarth = leftExpect - this.age;
+    return lifeEarth;
+  }
 }
