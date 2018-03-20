@@ -48,4 +48,10 @@ export class galacticAge {
     let lifeMercury = (leftExpect - this.age) / .24;
     return Math.floor(lifeMercury);
   }
+
+  remainingVenus() {
+    const leftExpect = 72;
+    let lifeVenus = (leftExpect - this.age) / .62;
+    return Math.floor(lifeVenus);
+  }
 }

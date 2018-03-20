@@ -44,6 +44,6 @@ describe('Age', function () {
 
   it('returns remaining time on Venus', function () {
     let age = new galacticAge(26, "1991-08-04");
-    expect(age.remainingVenus()).toEqual(72);
+    expect(age.remainingVenus()).toEqual(74);
   })
 });
