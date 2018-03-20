@@ -42,4 +42,10 @@ export class galacticAge {
     let lifeEarth = leftExpect - this.age;
     return lifeEarth;
   }
+
+  remainingMercury() {
+    const leftExpect = 72;
+    let lifeMercury = (leftExpect - this.age) / .24;
+    return Math.floor(lifeMercury);
+  }
 }
