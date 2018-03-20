@@ -37,4 +37,9 @@ describe('Age', function () {
     expect(age.remainingEarth()).toEqual(46);
   });
 
+  it('returns remaining time on Mercury', function () {
+    let age = new galacticAge(26, "1991-08-04");
+    expect(remainingMercury().toEqual(191))
+  });
+  //
 });
