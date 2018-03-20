@@ -52,5 +52,8 @@ describe('Age', function () {
     expect(age.remainingMars()).toEqual(24);
   })
 
-
+  it('returns remaining time on Jupiter', function() {
+    let age = new galacticAge(26);
+    expect(age.remainingJupiter()).toEqual(3);
+  })
 });
