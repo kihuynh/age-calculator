@@ -60,4 +60,10 @@ export class galacticAge {
     let lifeMars = (leftExpect - this.age) / 1.88;
     return Math.floor(lifeMars);
   }
+
+  remainingJupiter() {
+    const leftExpect = 72;
+    let lifeJupiter = (leftExpect - this.age) / 11.86;
+    return Math.floor(lifeJupiter);
+  }
 }
