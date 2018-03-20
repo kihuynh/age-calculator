@@ -46,4 +46,9 @@ describe('Age', function () {
     let age = new galacticAge(26, "1991-08-04");
     expect(age.remainingVenus()).toEqual(74);
   })
+
+  it('returns remaining time on Mars', function () {
+    let age = new galacticAge(26);
+    expect(age.remainingMars()).toEqual(22);
+  })
 });
